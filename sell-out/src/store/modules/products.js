@@ -26,7 +26,6 @@ export default ProductsSlice.reducer;
 const { SET_PRODUCTS } = ProductsSlice.actions;
 const { SET_SINGLE_PRODUCT } =
 	ProductsSlice.actions;
-const { SET_ERROR } = ProductsSlice.actions;
 
 export const FetchProducts =
 	() => async (dispatch) => {
