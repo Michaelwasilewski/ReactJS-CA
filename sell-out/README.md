@@ -1,70 +1,43 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a  React e-commerce website built with React and React Router. The website allows users to browse products, add them to a cart, and checkout. It also includes a contact form where users can send inquiries to the store.
 
-## Available Scripts
+Technologies Used
+React
+React Router
+TailwindCSS
+Installation
+To run this project locally, you can clone the repository and run the following commands:
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+cd sell-out
+npm install
+npm start
+Features
+Home Page with list of products and search bar
+Product Page with product details and add to cart button
+Cart Icon Component that displays the number of items in the cart
+Checkout Page with list of products in cart, total and checkout button
+Checkout Success Page that displays order details and clears the cart
+Contact Page with form validation
+Pages
+Home Page
+The Home Page displays a list of products and a search bar. Users can browse the products and search for specific products using the search bar. Each product card has a "View Product" button that takes users to the Product Page for that product.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Product Page
+The Product Page displays the details of a specific product, including the product image, name, price, and description. Users can add the product to the cart by clicking the "Add to Cart" button.
 
-### `npm test`
+Cart Icon Component
+The Cart Icon Component is displayed on every page and shows the number of items in the cart. When clicked, it takes users to the Checkout Page.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Checkout Page
+The Checkout Page displays a list of products in the cart, the total cost, and a checkout button. Users can remove products from the cart or proceed to checkout by clicking the button.
 
-### `npm run build`
+Checkout Success Page
+The Checkout Success Page displays the details of the order that was just placed and clears the cart. Users can return to the store by clicking the link on the page.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contact Page
+The Contact Page displays a form that users can fill out to send an inquiry to the store. The form includes fields for full name, subject, email, and body. The form validates the input and console logs the data once the validation requirements are met.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deployment
+This project is deployed to Vercel and can be accessed at [react-js-ca-zzmg.vercel.app](https://react-js-ca-zzmg.vercel.app/)
