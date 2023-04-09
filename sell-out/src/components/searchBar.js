@@ -27,19 +27,6 @@ const SearchBar = ({ setResults }) => {
 		fetchData(value);
 	};
 	return (
-		// <div className="bg-neutral1 w-full rounded p-1 md:p-2 mx-auto mt-2 flex items-center shadow-md">
-		// 	<input
-		// 		type="text"
-		// 		name="search"
-		// 		id="search"
-		// 		value={input}
-		// 		onChange={(e) =>
-		// 			handleChange(e.target.value)
-		// 		}
-		// 		className="w-full h-full ml-2 border-none outline-none"
-		// 		placeholder="Type to search the sale"
-		// 	/>
-		// </div>
 		<div className="relative w-full max-w-md">
 			<label htmlFor="search" className="sr-only">
 				Search

@@ -7,13 +7,21 @@ const cartSlice = createSlice({
 	},
 	reducers: {
 		ADD_PRODUCT_TO_CART: (state, action) => {
-			console.log('Action: ', action);
-			state.productsInCart = [
-				...state.productsInCart,
-				action.payload,
-			];
-			state.numberOfProductsInCart =
-				state.productsInCart.length;
+			const isProductInCart =
+				state.productsInCart &&
+				state.productsInCart.some(
+					(product) =>
+						product.id === action.payload.id
+				);
+			if (isProductInCart) {
+			} else {
+				state.productsInCart = [
+					...state.productsInCart,
+					action.payload,
+				];
+				state.numberOfProductsInCart =
+					state.productsInCart.length;
+			}
 		},
 		REMOVE_PRODUCT_FROM_CART: (state, action) => {
 			const productIdToRemove = action.payload;
@@ -26,9 +34,9 @@ const cartSlice = createSlice({
 				state.productsInCart.length;
 		},
 		CLEAR_CART: (state) => {
-			state.itemsInCart = [];
-			state.numberOfItemsInCart =
-				state.itemsInCart.length;
+			state.productsInCart = [];
+			state.numberOfProductsInCart =
+				state.productsInCart.length;
 		},
 	},
 });
@@ -47,3 +55,7 @@ export const addSingleProductToCart =
 		console.log('Product Data', productData);
 		dispatch(ADD_PRODUCT_TO_CART(productData));
 	};
+
+export const clearCart = () => (dispatch) => {
+	dispatch(CLEAR_CART());
+};
