@@ -84,12 +84,12 @@ function Footer() {
 									</Link>
 								</div>
 								<div className="px-3 py-2 m-1 rounded-md bg-gray-800 hover:bg-gray-700">
-									<a
-										href="/"
+									<Link
+										to="/products"
 										className="text-sm font-medium text-white"
 									>
-										Privacy
-									</a>
+										Continue Shopping
+									</Link>
 								</div>
 								<div className="px-3 py-2 m-1 rounded-md bg-gray-800 hover:bg-gray-700">
 									<a
