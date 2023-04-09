@@ -20,7 +20,6 @@ const Products = () => {
 		dispatch(FetchProducts());
 	}, [dispatch]);
 	const [results, setResults] = useState([]);
-	console.log(products);
 	return (
 		<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div className="bg-neutral1">

@@ -32,7 +32,6 @@ const Router = () => {
 					path="/success"
 					element={<CheckOutSuccess />}
 				/>
-				{/* Only match this when no other routes is a valid match */}
 				<Route path="*" element={<NotFound />} />
 			</Routes>
 		</>

@@ -43,7 +43,6 @@ const cartSlice = createSlice({
 
 export default cartSlice.reducer;
 
-// Actions
 export const {
 	ADD_PRODUCT_TO_CART,
 	REMOVE_PRODUCT_FROM_CART,
@@ -52,7 +51,6 @@ export const {
 
 export const addSingleProductToCart =
 	(productData) => (dispatch) => {
-		console.log('Product Data', productData);
 		dispatch(ADD_PRODUCT_TO_CART(productData));
 	};
 
