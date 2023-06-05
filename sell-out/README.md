@@ -1,43 +1,47 @@
+# Sell-Out: Your One-stop E-commerce Shop
 
-This is a  React e-commerce website built with React and React Router. The website allows users to browse products, add them to a cart, and checkout. It also includes a contact form where users can send inquiries to the store.
+![sell-out](https://github.com/Michaelwasilewski/ReactJS-CA/assets/89254319/9225d7ea-e905-421b-881f-ec38407eb0bc)
 
-Technologies Used
-React
-React Router
-TailwindCSS
-Installation
-To run this project locally, you can clone the repository and run the following commands:
+Sell-Out is a React-based e-commerce web application that offers users a seamless shopping experience, from browsing products to checkout. It also includes a contact form for user inquiries.
 
 
+## Description
+
+Sell-Out is an e-commerce platform with the following features:
+
+- A Home Page with a list of products and a search bar for user convenience.
+- A detailed Product Page for each item with an 'Add to Cart' button.
+- A Cart Icon Component that displays the number of items in the cart.
+- A Checkout Page with a list of products in the cart, the total cost, and a checkout button.
+- A Checkout Success Page that displays order details and clears the cart after successful purchase.
+- A Contact Page with form validation for any user inquiries.
+
+## Built With
+
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [TailwindCSS](https://tailwindcss.com/)
+
+## Getting Started
+
+### Installing
+
+To get the project up and running on your local machine, please follow these steps:
+
+1. Clone the repo:
+
+git clone git@github.com:your_username/sell-out.git
+
+2. Change the project directory:
 
 cd sell-out
+
+3. Install the dependenies:
+
 npm install
-npm start
-Features
-Home Page with list of products and search bar
-Product Page with product details and add to cart button
-Cart Icon Component that displays the number of items in the cart
-Checkout Page with list of products in cart, total and checkout button
-Checkout Success Page that displays order details and clears the cart
-Contact Page with form validation
-Pages
-Home Page
-The Home Page displays a list of products and a search bar. Users can browse the products and search for specific products using the search bar. Each product card has a "View Product" button that takes users to the Product Page for that product.
 
-Product Page
-The Product Page displays the details of a specific product, including the product image, name, price, and description. Users can add the product to the cart by clicking the "Add to Cart" button.
+### Running
+To start the app, run the following command:
 
-Cart Icon Component
-The Cart Icon Component is displayed on every page and shows the number of items in the cart. When clicked, it takes users to the Checkout Page.
+npm run start
 
-Checkout Page
-The Checkout Page displays a list of products in the cart, the total cost, and a checkout button. Users can remove products from the cart or proceed to checkout by clicking the button.
-
-Checkout Success Page
-The Checkout Success Page displays the details of the order that was just placed and clears the cart. Users can return to the store by clicking the link on the page.
-
-Contact Page
-The Contact Page displays a form that users can fill out to send an inquiry to the store. The form includes fields for full name, subject, email, and body. The form validates the input and console logs the data once the validation requirements are met.
-
-Deployment
-This project is deployed to Vercel and can be accessed at [react-js-ca-zzmg.vercel.app](https://react-js-ca-zzmg.vercel.app/)
